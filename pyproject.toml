@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "vehicle-ocr"
+version = "1.0.0"
+description = "OCR pipeline for extracting vehicle data from Russian registration certificates (STS)"
+authors = ["Developer"]
+readme = "README.md"
+packages = [{include = "vehicle_ocr", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+opencv-python = "^4.8"
+pytesseract = "^0.3.10"
+pillow = "^10.0"
+numpy = "^1.24"
+pydantic = "^2.0"
+pydantic-settings = "^2.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4"
+pytest-cov = "^4.1"
+
+[tool.poetry.scripts]
+vehicle-ocr = "vehicle_ocr.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

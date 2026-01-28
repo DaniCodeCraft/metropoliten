@@ -1,0 +1,29 @@
+{
+  "documents": [
+    {
+      "file": "test.jpg",
+      "reg_number": "В883ВО799",
+      "vin": "WP1ZZZ9PZ9LA42290",
+      "body_number": "WP1ZZZ9PZ9LA42290"
+    },
+    {
+      "file": "test1.jpg",
+      "reg_number": "О883ВО799",
+      "vin": "WP1ZZZ9PZ9LA42290",
+      "body_number": "WP1ZZZ9PZ9LA42290"
+    },
+    {
+      "file": "test2.jpg",
+      "reg_number": "В883ВУ799",
+      "vin": "WP1ZZZ9PZ9LA42290",
+      "body_number": "WP1ZZZ9PZ9LA42290"
+    }
+  ],
+  "total_processed": 3,
+  "statistics": {
+    "reg_numbers_found": 3,
+    "vins_found": 3,
+    "body_numbers_found": 3
+  },
+  "version": "1.0.0"
+}

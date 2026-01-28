@@ -1,0 +1,27 @@
+# Virtual environments
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+
+# Git
+.git/
+.gitignore
+
+# Old versions
+vehicle_parser_v1.py
+vehicle_parser_v2.py
+vehicle_parser_v3.py
+run.py
+
+# Output files
+data/output/*.json
+
+# Misc
+*.md
+!README.md
+task.md

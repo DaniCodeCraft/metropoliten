@@ -1,0 +1,9 @@
+services:
+  vehicle-ocr:
+    build: .
+    volumes:
+      # Mount data directory for input/output
+      - ./data:/app/data
+    environment:
+      # Override settings via environment variables
+      - VOCR_TESSERACT_LANG=rus+eng
