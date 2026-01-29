@@ -50,6 +50,22 @@ poetry install
 poetry run vehicle-ocr -i data/input -o data/output/results.json
 ```
 
+**Windows:**
+```powershell
+# 1. Установить Tesseract
+# Скачать установщик: https://github.com/UB-Mannheim/tesseract/wiki
+# Установить и добавить в PATH: C:\Program Files\Tesseract-OCR
+
+# 2. Установить Poetry
+pip install poetry
+
+# 3. Установить зависимости
+poetry install
+
+# 4. Запуск
+poetry run vehicle-ocr -i data/input -o data/output/results.json
+```
+
 ## Использование
 
 ### CLI
